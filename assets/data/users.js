@@ -1,0 +1,68 @@
+const users = [
+    {
+        id: 1,
+        image: require('../img/user.png'),
+        firstName: 'Mckeen',
+        middleName: 'Mamonong',
+        lastName: 'Asma',
+        email: 'masma_180000002118@uic.edu.ph',
+        role: 1, // 1 for passenger, 2 for driver
+        occupation: 'Student',
+        age: 20,
+        phone: '+639323900204',
+        gender: 'male',
+        dob: '07/23/2000',
+        streetaddress: 'deca homes indangan blk 76, lot 65',
+        city: 'davao city',
+    },
+    {
+        id: 2,
+        image: require('../img/user.png'),
+        firstName: 'Rolando',
+        middleName: 'Casipong',
+        lastName: 'Asma',
+        email: 'asmamckeen@gmail.com',
+        role: 2, // 1 for passenger, 2 for driver
+        occupation: 'Worker',
+        age: 49,
+        phone: '+639323900204',
+        gender: 'male',
+        dob: '07/23/2000',
+        streetaddress: 'deca homes indangan blk 76, lot 65',
+        city: 'davao city',
+    },
+    {
+        id: 3,
+        image: require('../img/user.png'),
+        firstName: 'Vernaliza',
+        middleName: 'Mamonong',
+        lastName: 'Asma',
+        email: 'mcasmakeen@gmail.com',
+        role: 1, // 1 for passenger, 2 for driver
+        occupation: 'Worker',
+        age: 48,
+        phone: '+639323900204',
+        gender: 'male',
+        dob: '07/23/2000',
+        streetaddress: 'deca homes indangan blk 76, lot 65',
+        city: 'davao city',
+    },
+    {
+        id: 3,
+        image: require('../img/user.png'),
+        firstName: 'Zemiel',
+        middleName: 'Mamonong',
+        lastName: 'Asma',
+        email: 'mckeenasma123@gmail.com',
+        role: 1, // 1 for passenger, 2 for driver
+        occupation: 'Worker',
+        age: 26,
+        phone: '+639323900204',
+        gender: 'male',
+        dob: '07/23/2000',
+        streetaddress: 'deca homes indangan blk 76, lot 65',
+        city: 'davao city',
+    },
+]
+
+export default users
