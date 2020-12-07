@@ -1,0 +1,45 @@
+-----------------------------------------------------------------------------------------------------------------------
+Installation
+
+yarn add redux react-redux redux-thunk
+yarn add react-navigation
+yarn add react-native-reanimated react-native-gesture-handler
+yarn add react-navigation-stack
+yarn add react-navigation-tabs
+
+npm i @react-navigation/native
+npm i react-native-onboarding-swiper
+npm i @react-navigation/stack
+
+npm i firebase
+expo install react-native-maps
+
+
+-----------------------------------------------------------------------------------------------------------------------
+Facebook Keys
+expo fetch:android:hashes
+https://www.youtube.com/watch?v=LJY73nD5bwQ&list=PLy9JCsy2u97m-xWAxGwHZ2vITtj4qBKDm&index=4
+https://docs.expo.io/versions/v40.0.0/sdk/facebook/
+
+
+-----------------------------------------------------------------------------------------------------------------------
+Publishing
+https://docs.expo.io/distribution/building-standalone-apps/#building-standalone-apps
+
+expo build:android -t apk
+adb install app-filename.apk
+
+
+-----------------------------------------------------------------------------------------------------------------------
+Builds
+https://expo.io/accounts/mckn/builds/a245be8f-2690-4778-95f4-75a2ee837a10
+
+
+-----------------------------------------------------------------------------------------------------------------------
+Javascript Bundle 0 Error
+https://daveceddia.com/unexpected-token-in-json-at-position-0/#:~:text=JSON%20should%20start%20with%20a,or%20false%20%2F%20true%20%2F%20null%20.&text=That%20unexpected%20token%2C%20%3C%20%2C%20is,some%20other%20non%2DJSON%20string.
+
+https://stackoverflow.com/questions/55645955/expo-publishing-issue-metro-bundler-has-encountered-an-internal-error
+expo start -c
+yarn cache clean
+

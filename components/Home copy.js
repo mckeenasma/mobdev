@@ -132,7 +132,7 @@ export default Home = ({navigation}) => {
         {/* Button */}
             <TouchableOpacity
                 onPress={() => navigation.navigate('LoginScreen')}>
-                <Text style={styles.navButtonText}>Logout</Text>
+                <Text style={styles.navButtonText}>Change Credentials</Text>
             </TouchableOpacity>
             </ScrollView>
 
