@@ -1,6 +1,15 @@
 -----------------------------------------------------------------------------------------------------------------------
 Installation
 
+expo install expo-permissions
+npm i react-native-maps
+npm install @mapbox/polyline
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
 yarn add redux react-redux redux-thunk
 yarn add react-navigation
 yarn add react-native-reanimated react-native-gesture-handler
