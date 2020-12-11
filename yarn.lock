@@ -4153,6 +4153,11 @@ lodash.camelcase@^4.3.0:
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
+
 lodash.throttle@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
@@ -5284,6 +5289,13 @@ react-is@^16.12.0, react-is@^16.13.0, react-is@^16.7.0, react-is@^16.8.1, react-
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-native-animatable@1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.3.3.tgz#a13a4af8258e3bb14d0a9d839917e9bb9274ec8a"
+  integrity sha512-2ckIxZQAsvWn25Ho+DK3d1mXIgj7tITkrS4pYDvx96WyOttSvzzFeQnM2od0+FUMzILbdHDsDEqZvnz1DYNQ1w==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-native-gesture-handler@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.9.0.tgz#e441b1c0277c3fd4ca3e5c58fdd681e2f0ceddf0"
@@ -5295,15 +5307,36 @@ react-native-gesture-handler@^1.9.0:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-hr-component@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-hr-component/-/react-native-hr-component-2.0.3.tgz#fcde35502eea4788a35357b7325a771e6fd39dff"
+  integrity sha512-cc+CLUm9o+YO09dk9a7Ix4zgA1QGc/xYs0CBsLPe254nkQMojmJQ9aC3muUtU8x0+usvTj35ICQLH6QulTiQgQ==
+
 react-native-iphone-x-helper@^1.3.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
   integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
 
+react-native-maps-directions@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/react-native-maps-directions/-/react-native-maps-directions-1.8.0.tgz#ced452efeb153e54dfb9315480b0ae9539dfbcc7"
+  integrity sha512-7KWfPrvPLU8VP2nEqsnrWlOuylidlRWWDdk3lqT5Nb1q87FeyzNgA7Ib7n6cZlQwH4usTRlJSnzNo/yQ3u4AZw==
+  dependencies:
+    lodash.isequal "^4.5.0"
+    prop-types "^15.6.0"
+
 react-native-maps@^0.27.1:
   version "0.27.1"
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.27.1.tgz#2f10cd417bb2fd938c9e015b1c9b6d9b1a44b97f"
   integrity sha512-HygBkZBecTnIVRYrSiLRAvu4OmXOYso/A7c6Cy73HkOh9CgGV8Ap5eBea24tvmFGptjj5Hg8AJ94/YbmWK1Okw==
+
+react-native-modal@^11.5.6:
+  version "11.5.6"
+  resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-11.5.6.tgz#bb25a78c35a5e24f45de060e5f64284397d38a87"
+  integrity sha512-APGNfbvgC4hXbJqcSADu79GLoMKIHUmgR3fDQ7rCGZNBypkStSP8imZ4PKK/OzIZZfjGU9aP49jhMgGbhY9KHA==
+  dependencies:
+    prop-types "^15.6.2"
+    react-native-animatable "1.3.3"
 
 react-native-onboarding-swiper@^1.1.4:
   version "1.1.4"

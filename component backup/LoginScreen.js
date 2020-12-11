@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import FormInput from './FormInput';
 import FormButton from './FormButton';
-import SocialButton from './SocialButton';
+
 import firebase from 'firebase'
 
 export default function LoginScreen({navigation, props}) {
@@ -49,7 +49,6 @@ export default function LoginScreen({navigation, props}) {
 
       <FormInput
         // labelValue={email}
-        value={'masma_180000002118@uic.edu.ph'}
         onChangeText={(email) => setEmail({email})}
         placeholderText="Email"
         iconType="user"
@@ -60,7 +59,6 @@ export default function LoginScreen({navigation, props}) {
 
       <FormInput
         // labelValue={password}
-        value={'123456'}
         onChangeText={(password) => setPassword({password})}
         placeholderText="Password"
         iconType="lock"
@@ -68,45 +66,33 @@ export default function LoginScreen({navigation, props}) {
       />
 
       <FormButton
-        buttonTitle="Login"
-        onPress={() => navigation.navigate('Home')}
+        buttonTitle="Sign In"
+        onPress={() => loginUser(email, password)}
       />
       
-      
 
-      {/* <TouchableOpacity
+      <TouchableOpacity
         style={styles.forgotButton}
         onPress={() => navigation.navigate('SignupScreen')}>
         <Text style={styles.navButtonText}>
           Don't have an acount? Create here
         </Text>
-      </TouchableOpacity> */}
+      </TouchableOpacity>
 
-      {Platform.OS === 'android' ? (
-        <View style={styles.otherBtn}>
-          <SocialButton
-            buttonTitle="Login with Facebook"
-            btnType="facebook"
-            color="#fff"
-            backgroundColor="#4867aa"
-            onPress={() => navigation.navigate('Facebook')}
-          />
-    
-          <SocialButton
-            buttonTitle="Login with Google"
-            btnType="google"
-            color="#fff"
-            backgroundColor="#de4d41"
-            onPress={() => navigation.navigate('Google')}
-          />
-        </View>
-      ) : null}
-      <FormButton
-        buttonTitle="Register"
-        onPress={() => navigation.navigate('SignupScreen')}
-      />
-
-      
+      <TouchableOpacity
+        style={styles.allButtons}
+        onPress={() => navigation.navigate('Home')}>
+        <Text style={styles.navButtonText}>
+          Go to Home
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.allButtons}
+        onPress={() => navigation.navigate('MapScreen')}>
+        <Text style={styles.navButtonText}>
+          Go to Map
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -119,9 +105,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 20,
     paddingTop: 50
-  },
-  otherBtn: {
-    marginTop: '30%'
   },
   logo: {
     height: 150,

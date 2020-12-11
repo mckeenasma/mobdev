@@ -60,8 +60,8 @@ const OnboardingScreen = ({navigation}) => {
           {
             backgroundColor: '#1CA1F8',
             image: <Image source={require('../assets/logo.png')} style={styles.img}/>,
-            title: '',
-            subtitle: '.',
+            title: 'Login or Sign Up',
+            subtitle: 'Have ease on paying your commute fee.',
           },
           {
             backgroundColor: '#fdeb93',
@@ -72,8 +72,8 @@ const OnboardingScreen = ({navigation}) => {
           {
             backgroundColor: '#e9bcbe',
             image: <Image source={require('../assets/sign.png')} style={styles.img} />,
-            title: 'Login or Sign Up',
-            subtitle: "Have ease on paying your commute fee",
+            title: 'Track your destination path',
+            subtitle: "",
           },
         ]}
       />

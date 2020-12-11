@@ -20,8 +20,8 @@ const SignupScreen = ({navigation}) => {
 
   signUpUser=(email, password) => {
       try {
-        console.log(password)
-        if (password.password.length < 6) {
+        console.log(email)
+        if (password.length < 6) {
             alert('Please enter atleast 6 characters')
             return
         }
@@ -38,7 +38,6 @@ const SignupScreen = ({navigation}) => {
       <Text style={styles.text}>Create an account</Text>
 
       <FormInput
-      value={'masma_180000002118@uic.edu.ph'}
         labelValue={email}
         onChangeText={(userEmail) => setEmail(userEmail)}
         placeholderText="Email"
@@ -49,7 +48,6 @@ const SignupScreen = ({navigation}) => {
       />
 
       <FormInput
-      value={'123456'}
         labelValue={password}
         onChangeText={(userPassword) => setPassword(userPassword)}
         placeholderText="Password"
@@ -72,8 +70,8 @@ const SignupScreen = ({navigation}) => {
       /> */}
 
       <FormButton
-        buttonTitle="Register"
-        onPress={() => navigation.navigate('Home')}
+        buttonTitle="Sign Up"
+        onPress={() => signUpUser(email, password)}
         success
       />
 
@@ -98,19 +96,19 @@ const SignupScreen = ({navigation}) => {
       {Platform.OS === 'android' ? (
         <View>
           <SocialButton
-            buttonTitle="Register with Facebook"
+            buttonTitle="Sign Up with Facebook"
             btnType="facebook"
-            color="#fff"
-            backgroundColor="#4867aa"
-            onPress={() => navigation.navigate('Facebook')}
+            color="#4867aa"
+            backgroundColor="#e6eaf4"
+            onPress={() => alert('Facebook Clicked!')}
           />
     
           <SocialButton
-            buttonTitle="Register with Google"
+            buttonTitle="Sign Up with Google"
             btnType="google"
-            color="#fff"
-            backgroundColor="#de4d41"
-            onPress={() => navigation.navigate('Google')}
+            color="#de4d41"
+            backgroundColor="#f5e7ea"
+            onPress={() => alert('Facebook Clicked!')}
           />
         </View>
       ) : null}

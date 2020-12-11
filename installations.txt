@@ -4,6 +4,7 @@ Installation
 expo install expo-permissions
 npm i react-native-maps
 npm install @mapbox/polyline
+npm i react-native-maps-directions
 
 -----------------------------------------------------------------------------------------------------------------------
 
